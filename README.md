@@ -1,6 +1,6 @@
 # thompson
 
-[![Clojars Project](https://clojars.org/thompson/latest-version.svg](https://clojars.org/thompson)
+[![Clojars Project](https://clojars.org/thompson/latest-version.svg)](https://clojars.org/thompson)
 
 **thompson** is a simple library for finite state automata (FSA).
 Implementations of both deterministic and non-deterministic FSAs
