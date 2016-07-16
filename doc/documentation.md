@@ -24,8 +24,8 @@ is accepted by the FSA `graph` one or more times.
 `(opt graph)`: Returns an FSA that accepts anything that
 is accepted by the FSA `graph` or an empty sequence.
 
-`(rng graph lower)`: Returns an FSA that accepts anything that
-is accepted by the FSA `graph` replicated `lower` times in series.
+`(rng graph number)`: Returns an FSA that accepts anything that
+is accepted by the FSA `graph` replicated `number` times in series.
 
 `(rng graph lower upper)`: Returns an FSA that accepts anything that
 is accepted by the FSA `graph` replicated between `lower` and
@@ -39,7 +39,24 @@ accepts anything that is accepted by `graph` replicated at least
 that is accepted by the non-deterministic FSA `nfa`. If `nfa` is
 already deterministic, an exception is thrown.
 
+## Inspectors
+
+`(get-graph-type fsa)`: Returns the keyword `:NFA` if `fsa` is non-deterministic
+or `:DFA` if deterministic.
+
+`(get-start-state fsa)`: Returns the start state of the `fsa`.
+
+`(get-final-state fsa)`: Returns the final state(s) of the `fsa`.
+
+`(get-alphabet fsa)`: Returns the alphabet of the `fsa`.
+
+`(get-states fsa)`: Returns all the states of the `fsa`.
+
+`(get-transition-map fsa)`: Returns the transition map for the `fsa`.
+
 ## Checkers
 
-`(accepts? fsa stream)`: Returns True if and only if the FSA `fsa`
+`(accepts? fsa stream)`: Returns true if and only if the FSA `fsa`
 accepts `stream`, which may be a string, list, or vector.
+
+`(final? state)`: Returns true if and only `state` is a final state.

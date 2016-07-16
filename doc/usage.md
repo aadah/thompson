@@ -65,6 +65,6 @@ Finally, it is possible to inspect an FSA using a number of
 getter functions like `get-start-state` and `get-alphabet`.
 
 ```clojure
-(def start-start (get-start-state)) ;; => #object[clojure.lang.Atom 0x577b8d3d {:status :ready, :val false}]
+(get-start-state fsa) ;; => #object[clojure.lang.Atom 0x577b8d3d {:status :ready, :val false}]
 (get-alphabet fsa) ;; => #{\a \b \c}
 ```
