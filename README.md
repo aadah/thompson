@@ -9,8 +9,11 @@ are present. See `doc/usage.md` for how to use and
 
 ## TODO
 
+- Standardize type for a state. Currently `clojure.lang.Atom` for NFAs
+  and `clojure.lang.PersistentHashSet` for DFAs.
+- Change `get-final-state` to `get-final-states`, always return a set.
 - Write search algorithm that returns segments of a stream that
-matches a given FSA.
+  matches a given FSA.
 
 ## References
 
