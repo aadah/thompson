@@ -15,7 +15,7 @@
 (declare opt)
 (declare rng)
 
-;; other NSAs
+;; other NFAs
 (comment (declare any))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
