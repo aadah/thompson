@@ -41,8 +41,8 @@ already deterministic, an exception is thrown.
 
 ## Inspectors
 
-`(get-graph-type fsa)`: Returns the keyword `:NFA` if `fsa` is non-deterministic
-or `:DFA` if deterministic.
+`(get-graph-type fsa)`: Returns the keyword `:NFA` if the `fsa` is
+non-deterministic or `:DFA` if deterministic.
 
 `(get-start-state fsa)`: Returns the start state of the `fsa`.
 
